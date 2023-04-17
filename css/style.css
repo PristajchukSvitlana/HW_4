@@ -1,0 +1,43 @@
+
+.main {
+    background-color: whitesmoke;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: auto;
+}
+
+h1 {
+    color: red;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5;
+}
+
+h2 {
+    color: #999999;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5;
+}
+
+h3 {
+    color: black;
+    font-weight: bold
+}
+
+.wrapper {
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.description {
+    color: dimgray
+}
