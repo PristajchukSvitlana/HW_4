@@ -47,6 +47,7 @@ a {
     display: block;
 }
 
+/*table-cell styles*/
 .header {
     color: black;
     font-size: 28px;
@@ -126,6 +127,7 @@ a {
 .col {
     width: 50%;
     display: table-cell;
+    outline: 1px solid black;
 }
 
 .section_fourth_cell {
@@ -158,4 +160,82 @@ a {
 
 .section_fourth_cell_one_coll:last-child {
     padding: 20px;
+}
+/* inline-block styles*/
+.sec_one {
+    width: 100%;
+    background-color: yellow;
+    font-size: 0;
+    text-align: center;
+}
+.sec_one_in_b {
+    width: 33%;
+    display: inline-block;
+    font-size: 24px;
+    outline: 1px solid black;
+    vertical-align: top;
+
+}
+
+.sec_second {
+    width: 100%;
+    background-color: greenyellow;
+    font-size: 0;
+    text-align: center;
+}
+.sec_section_in_b {
+    width: 33%;
+    display: inline-block;
+    font-size: 24px;
+    vertical-align: top;
+
+}
+.sec_section_in_b_two {
+    width: 67%;
+    display: inline-block;
+    font-size: 24px;
+    vertical-align: top;
+
+}
+.sec_second_in_in_b {
+    outline: 1px solid black;
+    padding: 20px;
+}
+
+.sec_thrid {
+    width: 100%;
+    background-color: aqua;
+    font-size: 0;
+    text-align: center;
+}
+.sec_thrid_in_b_one {
+    width: 67%;
+    display: inline-block;
+    font-size: 24px;
+    vertical-align: top;
+    outline: 1px solid black;
+}
+.sec_thrid_in_b_two {
+    width: 33%;
+    display: inline-block;
+    font-size: 24px;
+    vertical-align: top;
+    outline: 1px solid black;
+}
+.sec_thrid_in_in_b{
+    outline: 1px solid black;
+
+}
+.sec_fourth{
+    width: 100%;
+    background-color: violet;
+    font-size: 0;
+    text-align: center;
+}
+.sec_fourth_in_b{
+    width: 50%;
+    display: inline-block;
+    font-size: 24px;
+    vertical-align: top;
+    outline: 1px solid black;
 }
