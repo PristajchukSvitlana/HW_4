@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .main {
     background-color: whitesmoke;
     width: 1200px;
@@ -29,7 +33,7 @@ h3 {
 
 .wrapper {
     background-color: white;
-   /* width: 100%;*/
+    /* width: 100%;*/
     padding: 20px;
 }
 
@@ -161,6 +165,7 @@ a {
 .section_fourth_cell_one_coll:last-child {
     padding: 20px;
 }
+
 /* inline-block styles*/
 .sec_one {
     width: 100%;
@@ -168,6 +173,7 @@ a {
     font-size: 0;
     text-align: center;
 }
+
 .sec_one_in_b {
     width: 33%;
     display: inline-block;
@@ -183,6 +189,7 @@ a {
     font-size: 0;
     text-align: center;
 }
+
 .sec_section_in_b {
     width: 33%;
     display: inline-block;
@@ -190,6 +197,7 @@ a {
     vertical-align: top;
 
 }
+
 .sec_section_in_b_two {
     width: 67%;
     display: inline-block;
@@ -197,6 +205,7 @@ a {
     vertical-align: top;
 
 }
+
 .sec_second_in_in_b {
     outline: 1px solid black;
     padding: 20px;
@@ -208,6 +217,7 @@ a {
     font-size: 0;
     text-align: center;
 }
+
 .sec_thrid_in_b_one {
     width: 67%;
     display: inline-block;
@@ -215,6 +225,7 @@ a {
     vertical-align: top;
     outline: 1px solid black;
 }
+
 .sec_thrid_in_b_two {
     width: 33%;
     display: inline-block;
@@ -222,20 +233,82 @@ a {
     vertical-align: top;
     outline: 1px solid black;
 }
-.sec_thrid_in_in_b{
+
+.sec_thrid_in_in_b {
     outline: 1px solid black;
 
 }
-.sec_fourth{
+
+.sec_fourth {
     width: 100%;
     background-color: violet;
     font-size: 0;
     text-align: center;
 }
-.sec_fourth_in_b{
+
+.sec_fourth_in_b {
     width: 50%;
     display: inline-block;
     font-size: 24px;
     vertical-align: top;
+    outline: 1px solid black;
+}
+
+/* Flout*/
+.sec_one_fl {
+    width: 33.33%;
+    background: orange;
+    float: left;
+    outline: 1px solid black;
+}
+
+.clr {
+    clear: both;
+}
+
+.sec_second_fl_fr_col {
+    outline: 1px solid black;
+    background: red;
+}
+
+.sec_second_fl_fr {
+    float: left;
+    width: 33%;
+}
+
+.sec_second_fl_sec {
+    width: 67%;
+    float: right;
+}
+
+.sec_thr_fl_fr {
+    float: left;
+    width: 67%;
+}
+
+.sec_thr {
+    background: yellowgreen;
+    outline: 1px solid black;
+}
+
+.sec_thr_fl_sec {
+    width: 33%;
+    float: right;
+}
+.fl_col {
+    width: 50%;
+    float: left;
+    outline: 1px solid black;
+}
+
+.sec_fth_fl {
+    width: 50%;
+    float: left;
+    outline: 1px solid black;
+}
+
+.sec_fth_fl_one_coll {
+    width: 50%;
+    float: left;
     outline: 1px solid black;
 }
