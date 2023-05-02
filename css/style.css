@@ -318,3 +318,46 @@ a {
 .sec_fth {
     background: yellow;
 }
+
+/*Flex-box*/
+.sec_fx {
+    display: flex;
+    background: yellow;
+    outline: 1px solid black;
+}
+
+.sec_sec_fx {
+    display: flex;
+    background: orange;
+    outline: 1px solid black;
+}
+
+.sec_second_fx_fr_col {
+    outline: 1px solid black;
+}
+
+.sec_thr_fx {
+    display: flex;
+    background: red;
+    outline: 1px solid black;
+}
+
+.sec_thr_fx_fr_col {
+    display: flex;
+    outline: 1px solid black;
+}
+
+.fx_col {
+    outline: 1px solid black;
+}
+
+.sec_fth_fx {
+    display: flex;
+    outline: 1px solid black;
+    background: burlywood;
+}
+
+.sec_fth_fx_one {
+    display: flex;
+    outline: 1px solid black;
+}
