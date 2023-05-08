@@ -461,19 +461,22 @@ a {
     background-color: red;
     outline: 1px solid black;
 }
-.sec_fth_gra_main{
+
+.sec_fth_gra_main {
     padding: 10px;
     display: grid;
     grid-template-areas: "sec_fth_gra sec_fth_gra";
     background-color: yellow;
     outline: 1px solid black;
 }
-.sec_fth_gra_one_in{
+
+.sec_fth_gra_one_in {
     display: grid;
     grid-template-areas: "sec_fth_gra_one_coll sec_fth_gra_one_coll";
 
 }
-.sec_thr_gra{
+
+.sec_thr_gra {
     padding: 10px;
     display: grid;
     grid-template-areas: "sec_thr_gr_fra sec_thr_gr_fra";
@@ -481,19 +484,21 @@ a {
     background: lightskyblue;
 }
 
-.sec_thr_gra_fr_col_in{
+.sec_thr_gra_fr_col_in {
     padding: 10px;
     display: grid;
     grid-template-areas: "gra_col gra_col";
-    
+
 }
-.sec_sec_gra{
+
+.sec_sec_gra {
     padding: 10px;
     display: grid;
     grid-template-areas: "sec_second_gra_fr sec_second_gra_sec";
     outline: 1px solid black;
     background: aquamarine;
 }
-.sec_second_gra_fr_col{
+
+.sec_second_gra_fr_col {
     padding: 10px;
 }
