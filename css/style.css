@@ -325,13 +325,21 @@ a {
     background: yellow;
     outline: 1px solid black;
 }
+.sec_one_fx{
+    flex: 2 1 auto;
+}
 
 .sec_sec_fx {
     display: flex;
     background: orange;
     outline: 1px solid black;
 }
-
+.sec_second_fx_fr{
+    flex: 2 1 auto;
+}
+.sec_second_fx_sec{
+    flex: 2 1 auto;
+}
 .sec_second_fx_fr_col {
     outline: 1px solid black;
 }
@@ -341,7 +349,9 @@ a {
     background: red;
     outline: 1px solid black;
 }
-
+.sec_thr_fx_fr{
+    flex: 2 1 auto;
+}
 .sec_thr_fx_fr_col {
     display: flex;
     outline: 1px solid black;
@@ -349,6 +359,7 @@ a {
 
 .fx_col {
     outline: 1px solid black;
+    flex: 2 1 auto;
 }
 
 .sec_fth_fx {
@@ -356,8 +367,11 @@ a {
     outline: 1px solid black;
     background: burlywood;
 }
-
+.sec_fth_fx_fx{
+    flex: 2 1 auto ;
+}
 .sec_fth_fx_one {
     display: flex;
     outline: 1px solid black;
 }
+
