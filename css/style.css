@@ -325,7 +325,8 @@ a {
     background: yellow;
     outline: 1px solid black;
 }
-.sec_one_fx{
+
+.sec_one_fx {
     flex: 2 1 auto;
 }
 
@@ -334,12 +335,15 @@ a {
     background: orange;
     outline: 1px solid black;
 }
-.sec_second_fx_fr{
+
+.sec_second_fx_fr {
     flex: 2 1 auto;
 }
-.sec_second_fx_sec{
+
+.sec_second_fx_sec {
     flex: 2 1 auto;
 }
+
 .sec_second_fx_fr_col {
     outline: 1px solid black;
 }
@@ -349,9 +353,11 @@ a {
     background: red;
     outline: 1px solid black;
 }
-.sec_thr_fx_fr{
+
+.sec_thr_fx_fr {
     flex: 2 1 auto;
 }
+
 .sec_thr_fx_fr_col {
     display: flex;
     outline: 1px solid black;
@@ -367,11 +373,127 @@ a {
     outline: 1px solid black;
     background: burlywood;
 }
-.sec_fth_fx_fx{
-    flex: 2 1 auto ;
+
+.sec_fth_fx_fx {
+    flex: 2 1 auto;
 }
+
 .sec_fth_fx_one {
     display: flex;
     outline: 1px solid black;
 }
 
+/* Grid_template_columns*/
+.sec_gr {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: darkorange;
+    outline: 1px solid black;
+}
+
+.sec_sec_gr {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rosybrown;
+    outline: 1px solid black;
+}
+
+.sec_thr_gr {
+    display: grid;
+    background-color: yellowgreen;
+    outline: 1px solid black;
+    grid-template-columns: repeat(2, auto);
+}
+
+.sec_second_gr_fr_col {
+    padding: 10px;
+}
+
+.sec_thr_gr_fr_col {
+    padding: 10px;
+}
+
+.sec_thr_gr_fr {
+    display: grid;
+    background: red;
+    outline: 1px solid black;
+}
+
+.sec_thr_gr_fr_col_in {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    outline: 1px solid black;
+}
+
+.gr_col {
+    padding: 10px;
+    outline: 1px solid black;
+}
+
+.sec_thr_gr_sec {
+    padding: 10px;
+}
+
+.sec_fth_gr_main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    outline: 1px solid black;
+    background: aqua;
+}
+
+.sec_fth_gr {
+    padding: 10px;
+    outline: 1px solid black;
+}
+
+.sec_fth_gr_one_in {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+}
+
+/* Grid Areas*/
+.sec_gra {
+    padding: 10px;
+    display: grid;
+    grid-template-areas: "sec_one_gra sec_one_gra sec_one_gra";
+    background-color: red;
+    outline: 1px solid black;
+}
+.sec_fth_gra_main{
+    padding: 10px;
+    display: grid;
+    grid-template-areas: "sec_fth_gra sec_fth_gra";
+    background-color: yellow;
+    outline: 1px solid black;
+}
+.sec_fth_gra_one_in{
+    display: grid;
+    grid-template-areas: "sec_fth_gra_one_coll sec_fth_gra_one_coll";
+
+}
+.sec_thr_gra{
+    padding: 10px;
+    display: grid;
+    grid-template-areas: "sec_thr_gr_fra sec_thr_gr_fra";
+    outline: 1px solid black;
+    background: lightskyblue;
+}
+
+.sec_thr_gra_fr_col_in{
+    padding: 10px;
+    display: grid;
+    grid-template-areas: "gra_col gra_col";
+    
+}
+.sec_sec_gra{
+    padding: 10px;
+    display: grid;
+    grid-template-areas: "sec_second_gra_fr sec_second_gra_sec";
+    outline: 1px solid black;
+    background: aquamarine;
+}
+.sec_second_gra_fr_col{
+    padding: 10px;
+}
