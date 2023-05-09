@@ -394,16 +394,18 @@ a {
 
 .sec_sec_gr {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: auto;
     background-color: rosybrown;
+}
+.sec_second_gr_fr{
     outline: 1px solid black;
 }
 
 .sec_thr_gr {
     display: grid;
     background-color: yellowgreen;
-    outline: 1px solid black;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: 800px 1fr;
 }
 
 .sec_second_gr_fr_col {
