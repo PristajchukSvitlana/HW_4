@@ -456,51 +456,88 @@ a {
 }
 
 /* Grid Areas*/
-.sec_gra {
-    padding: 10px;
+.main {
     display: grid;
-    grid-template-areas: "sec_one_gra sec_one_gra sec_one_gra";
+    grid-template-columns: 400px 400px 400px;
+    grid-template-areas:
+      "a b c"
+      "d e e"
+      "f e e"
+      "h g g"
+      "i i j"
+      "k l j"
+      'm m n'
+      'o p n'
+      'q p n'
+      
+
+
+  }
+  .sec_1 {
+    background-color: #8ca0ff;
+    grid-area: a;
+  }
+.sec_2{
+    background-color: aqua;
+    grid-area: b;
+}
+.sec_3{
     background-color: red;
-    outline: 1px solid black;
+    grid-area: c;
 }
-
-.sec_fth_gra_main {
-    padding: 10px;
-    display: grid;
-    grid-template-areas: "sec_fth_gra sec_fth_gra";
-    background-color: yellow;
-    outline: 1px solid black;
+.sec_4{
+background: yellow;
+grid-area: d;
 }
-
-.sec_fth_gra_one_in {
-    display: grid;
-    grid-template-areas: "sec_fth_gra_one_coll sec_fth_gra_one_coll";
-
+.sec_5{
+background: #999999;
+grid-area: e;
 }
-
-.sec_thr_gra {
-    padding: 10px;
-    display: grid;
-    grid-template-areas: "sec_thr_gr_fra sec_thr_gr_fra";
-    outline: 1px solid black;
-    background: lightskyblue;
+.sec_6{
+    background: lightcoral;
+    grid-area: f;
 }
-
-.sec_thr_gra_fr_col_in {
-    padding: 10px;
-    display: grid;
-    grid-template-areas: "gra_col gra_col";
-
+.sec_7{
+    background: lightgreen;
+    grid-area: g;
 }
-
-.sec_sec_gra {
-    padding: 10px;
-    display: grid;
-    grid-template-areas: "sec_second_gra_fr sec_second_gra_sec";
-    outline: 1px solid black;
-    background: aquamarine;
+.sec_8{
+    background: lightblue;
+    grid-area: h;
 }
-
-.sec_second_gra_fr_col {
-    padding: 10px;
+.sec_9{
+    background: yellow;
+    grid-area: i;
+}
+.sec_10{
+    background: plum;
+    grid-area: j;
+}
+.sec_11{
+    background: wheat;
+    grid-area: k;
+}
+.sec_12{
+    background: greenyellow;
+    grid-area: l;
+}
+.sec_13{
+    background: brown;
+    grid-area: m;
+}
+.sec_14{
+    background: beige;
+    grid-area: n;
+}
+.sec_15{
+    background: pink;
+    grid-area: o;
+}
+.sec_16{
+    background: blue;
+    grid-area: p;
+}
+.sec_17{
+    background: green;
+    grid-area: q;
 }
