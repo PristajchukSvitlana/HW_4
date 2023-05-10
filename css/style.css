@@ -456,7 +456,7 @@ a {
 }
 
 /* Grid Areas*/
-.main {
+.grid {
     display: grid;
     grid-template-columns: 400px 400px 400px;
     grid-template-areas:
@@ -469,9 +469,6 @@ a {
       'm m n'
       'o p n'
       'q p n'
-      
-
-
   }
   .sec_1 {
     background-color: #8ca0ff;
