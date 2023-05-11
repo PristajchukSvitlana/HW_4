@@ -74,13 +74,13 @@ h3 {
     text-align: center;
     top: 40%;
     text-transform: uppercase;
-    visibility: hidden;
+    display: none;
     
 }
  .container:hover .text{
+   display: block;
    background:white;
    opacity: 0.7;
-   visibility: visible;
 }
 
 
