@@ -19,7 +19,7 @@ body {
     padding: 50px;
     overflow: auto;
 }
-
+/* menu */
 .menu {
     background: green;
 }
@@ -37,9 +37,8 @@ body {
     position: relative;
 }
 
-.list_menu li:hover {
+li:hover {
     background: lightblue;
-
 }
 
 .list_menu >li+li {
@@ -51,53 +50,39 @@ body {
     padding: 20px 30px;
 }
 
-li.list_menu_item>ul {
+li>ul {
     position: absolute;
     display: none;
-    left: -40px;
+    padding: 0;
 }
-
-li:hover ul {
+li:hover>ul {
     display: block;
 }
+li >ul >li{
+    position: absolute;
+    padding: 0;
+    bottom:0;
+    display: none;}
 
-.in_blocks .in_blocks_item {
-    border: none;
-}
-
-.in_blocks_item_list {
-    position: relative;
-}
-
-.in_blocks_item{
-    position: relative;
-}
-
-
-li.in_blocks_item>.grid_item{
+li>.grid_item{
     position: absolute;
     right: 100%;
     bottom: 0;
    display: none;
 }
-li.in_blocks_item:hover .grid_item{
+li:hover >.grid_item{
     display: block;
 }
 
-li.in_blocks_item>.float_item {
+li >.float_item {
     position: absolute;
-    left: 65%;
+    left: 100%;
     bottom:0;
     display: none;
 }
-li.in_blocks_item:hover .float_item{
+li:hover >.float_item{
     display: block;
 }
-
-.in_blocks_item{
-    border: none;
-}
-
 
 .nav {
     width: 200px;
