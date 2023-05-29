@@ -39,8 +39,6 @@ body {
     position: relative;
 }
 
-
-
 .blocks {
     display: block;
     padding: 30px 40px 30px 10px;
@@ -55,7 +53,7 @@ body {
     top: 28px;
     left: 10px;
     background: url('../sprite/css_sprites.png');
-    background-position: -0 -50px;
+    background-position: -75px -0;
 }
 
 .gallery::before {
@@ -66,7 +64,7 @@ body {
     top: 28px;
     left: 10px;
     background: url('../sprite/css_sprites.png');
-    background-position: -50px -25px;
+    background-position: -0 -0;
 }
 
 .blocks::before {
@@ -77,11 +75,11 @@ body {
     top: 28px;
     left: 100px;
     background: url('../sprite/css_sprites.png');
-    background-position: -25px -0;
+    background-position:  -0 -25px;
 }
 
 li:hover>.blocks::before {
-    background-position: -0 -25px;
+    background-position: -25px -25px;
 }
 
 li:hover {
@@ -152,11 +150,11 @@ li:hover>.float_item {
     top: 28px;
     left: 100px;
     background: url('../sprite/css_sprites.png');
-    background-position: -25px -25px;
+    background-position: -50px -0;
 }
 
 li:hover >.float::before {
-    background-position: -0px -0px;
+    background-position: -25px -0;
 
 }
 
@@ -168,12 +166,56 @@ li:hover >.float::before {
     top: 28px;
     left: 10px;
     background: url('../sprite/css_sprites.png');
-    background-position: -0px -0px;
+    background-position: -25px -0;
 }
 li:hover >.grid::before {
-    background-position: -25px -25px;
+    background-position: -50px -0;
+}
+/*footer*/
+
+.footer .list_menu li{
+    position: relative;
 
 }
+.footer .list_menu li:first-child a::before {
+    content: '';
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 28px;
+    left: 10px;
+    background: url('../sprite/css_sprites.png');
+    background-position:  -50px -50px;
+}
+.footer .list_menu li:first-child:hover a::before {
+    background-position: -25px -50px;
+}
+.footer .list_menu li+li a::before{
+    content: '';
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 28px;
+    left: 10px;
+    background: url('../sprite/css_sprites.png');
+    background-position: -49px -75px;
+}
+.footer .list_menu li+li:hover a::before{
+    background-position: -75px -25px;
+}
+.footer .list_menu li:last-child a::before{
+    content: '';
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 28px;
+    left: 10px;
+    background: url('../sprite/css_sprites.png');
+    background-position:  -0 -75px;
+}
+.footer .list_menu li:last-child:hover a::before{
+  background-position: -75px -50px;}
+
 .nav {
     width: 200px;
     height: 40%;
