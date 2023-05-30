@@ -177,7 +177,7 @@ li:hover >.grid::before {
     position: relative;
 
 }
-.footer .list_menu li:first-child a::before {
+.gmail::before {
     content: '';
     width: 25px;
     height: 25px;
@@ -187,10 +187,10 @@ li:hover >.grid::before {
     background: url('../sprite/css_sprites.png');
     background-position:  -50px -50px;
 }
-.footer .list_menu li:first-child:hover a::before {
+li:hover .gmail:before {
     background-position: -25px -50px;
 }
-.footer .list_menu li+li a::before{
+.instagram::before{
     content: '';
     width: 25px;
     height: 25px;
@@ -200,10 +200,10 @@ li:hover >.grid::before {
     background: url('../sprite/css_sprites.png');
     background-position: -49px -75px;
 }
-.footer .list_menu li+li:hover a::before{
+ li:hover .instagram::before{
     background-position: -75px -25px;
 }
-.footer .list_menu li:last-child a::before{
+.telegram::before{
     content: '';
     width: 25px;
     height: 25px;
@@ -213,7 +213,7 @@ li:hover >.grid::before {
     background: url('../sprite/css_sprites.png');
     background-position:  -0 -75px;
 }
-.footer .list_menu li:last-child:hover a::before{
+li:hover .telegram::before{
   background-position: -75px -50px;}
 
 .nav {
