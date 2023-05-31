@@ -99,41 +99,53 @@ li:hover {
 li>ul {
     position: absolute;
     /* display: block;*/
-    display: none;
+   /*display: none;*/
     padding: 0;
+    opacity: 0;
+    transition: all 3s ease-in;
+    pointer-events: none;
 }
 
 li:hover>ul {
-    display: block;
-}
-
-li>ul>li {
-    position: absolute;
-    padding: 0;
-    bottom: 0;
-    display: none;
+    background: aquamarine;
+    padding: 50px;
+   /* display: block;*/
+   opacity: 1;
+   pointer-events: all;
 }
 
 li>.grid_item {
     position: absolute;
     right: 100%;
     bottom: 0;
-    display: none;
+    height: 350%;
+    overflow: hidden;
+    transition: all 3s ease-in-out;
+    /*display: none;*/
 }
 
 li:hover>.grid_item {
-    display: block;
+    /*display: block;*/
+    padding: 20px;
+    background: red;
+    overflow: visible;
+
 }
 
 li>.float_item {
     position: absolute;
     left: 100%;
-    bottom: 0;
-    display: none;
+    bottom: -200%;
+    /*display: none;*/
+    transition: all 2s ease-in-out;
+
 }
 
 li:hover>.float_item {
+    background: orange;
+    padding: 20%;
     display: block;
+    bottom: 0;
 }
 
 .float {
@@ -189,7 +201,7 @@ li:hover .instagram::before {
 li:hover .telegram::before {
     background-position: -75px -50px;
 }
-
+/* Navigation*/
 .nav {
     width: 200px;
     height: 40%;
@@ -783,4 +795,7 @@ a {
 .sec_17 {
     background: green;
     grid-area: q;
+}
+/* Animation*/
+.item_blocks.blocks{
 }
