@@ -13,7 +13,7 @@ body {
 }
 
 .main {
-    background-color: whitesmoke;
+    background-color: darkgray;
     width: 1200px;
     margin: 0 auto;
     padding: 50px;
@@ -22,7 +22,7 @@ body {
 
 /* menu */
 .menu {
-    background: green;
+    background: rgb(77 37 86)
 }
 
 
@@ -37,6 +37,7 @@ body {
     background: pink;
     text-transform: capitalize;
     position: relative;
+    z-index: 10;
 }
 
 .blocks {
@@ -45,7 +46,7 @@ body {
     position: relative;
 }
 
-.home::before {
+.item::before {
     content: '';
     width: 25px;
     height: 25px;
@@ -53,21 +54,17 @@ body {
     top: 28px;
     left: 10px;
     background: url('../sprite/css_sprites.png');
+}
+
+.home::before {
     background-position: -75px -0;
 }
 
-.gallery::before {
-    content: '';
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    top: 28px;
-    left: 10px;
-    background: url('../sprite/css_sprites.png');
+.galery::before {
     background-position: -0 -0;
 }
 
-.blocks::before {
+.item_blocks::before {
     content: '';
     width: 25px;
     height: 25px;
@@ -75,7 +72,10 @@ body {
     top: 28px;
     left: 100px;
     background: url('../sprite/css_sprites.png');
-    background-position:  -0 -25px;
+}
+
+.blocks::before {
+    background-position: -0 -25px;
 }
 
 li:hover>.blocks::before {
@@ -83,7 +83,7 @@ li:hover>.blocks::before {
 }
 
 li:hover {
-    background: lightblue;
+    background: purple;
 }
 
 .list_menu>li+li {
@@ -98,8 +98,8 @@ li:hover {
 
 li>ul {
     position: absolute;
-   /* display: block;*/
-    display:none;
+    /* display: block;*/
+    display: none;
     padding: 0;
 }
 
@@ -143,78 +143,52 @@ li:hover>.float_item {
 }
 
 .float::before {
-    content: '';
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    top: 28px;
-    left: 100px;
-    background: url('../sprite/css_sprites.png');
     background-position: -50px -0;
 }
 
-li:hover >.float::before {
+li:hover>.float::before {
     background-position: -25px -0;
-
 }
 
 .grid::before {
-    content: '';
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    top: 28px;
-    left: 10px;
-    background: url('../sprite/css_sprites.png');
     background-position: -25px -0;
 }
-li:hover >.grid::before {
+
+li:hover>.grid::before {
     background-position: -50px -0;
 }
+
 /*footer*/
 
-.footer .list_menu li{
+.footer .list_menu li {
     position: relative;
 
 }
+
 .gmail::before {
-    content: '';
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    top: 28px;
-    left: 10px;
-    background: url('../sprite/css_sprites.png');
-    background-position:  -50px -50px;
+
+    background-position: -50px -50px;
 }
+
 li:hover .gmail:before {
     background-position: -25px -50px;
 }
-.instagram::before{
-    content: '';
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    top: 28px;
-    left: 10px;
-    background: url('../sprite/css_sprites.png');
+
+.instagram::before {
     background-position: -49px -75px;
 }
- li:hover .instagram::before{
+
+li:hover .instagram::before {
     background-position: -75px -25px;
 }
-.telegram::before{
-    content: '';
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    top: 28px;
-    left: 10px;
-    background: url('../sprite/css_sprites.png');
-    background-position:  -0 -75px;
+
+.telegram::before {
+    background-position: -0 -75px;
 }
-li:hover .telegram::before{
-  background-position: -75px -50px;}
+
+li:hover .telegram::before {
+    background-position: -75px -50px;
+}
 
 .nav {
     width: 200px;
@@ -240,7 +214,7 @@ ul>a {
 }
 
 a:hover {
-    color: blue;
+    color: white;
 }
 
 h1 {
