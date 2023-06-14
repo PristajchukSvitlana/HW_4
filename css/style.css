@@ -1,7 +1,9 @@
 
 * {
     box-sizing: border-box;
+    
 }
+
 
 body {
     position: relative;
@@ -1002,6 +1004,10 @@ ul {
 
 .list_block_menu>li {
     position: relative;
+    
+}
+ul{
+    list-style: none;
 }
 
 .items::before {
