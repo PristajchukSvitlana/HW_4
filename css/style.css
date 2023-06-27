@@ -1,7 +1,6 @@
-
 * {
     box-sizing: border-box;
-    
+
 }
 
 
@@ -33,7 +32,8 @@ body {
     display: flex;
     justify-content: center;
 }
-.list_menu >li>a{
+
+.list_menu>li>a {
     font-family: 'Tilt Prism', cursive;
 }
 
@@ -824,7 +824,7 @@ ul {
     display: flex;
     border: 2px solid red;
 }*/
- /*Test*/
+/*Test*/
 /*body>div{
     width: 100%;
     background: aqua;
@@ -864,7 +864,7 @@ ul {
     height: 100%;
     width: 100%;
     opacity: 0.9;
-    background:	rgba(237, 234, 222, 0.3);
+    background: rgba(237, 234, 222, 0.3);
     border: solid 1px #eeeeee;
     color: #ffffff;
 }
@@ -934,16 +934,17 @@ ul {
 
 .animation {
     width: 50px;
-   height: 400px;
+    height: 400px;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
     position: fixed;
     z-index: 100;
-    
+
 
 }
-.animation:hover{
+
+.animation:hover {
     width: 500px;
     height: 400px;
     border: 2px solid red;
@@ -954,11 +955,13 @@ ul {
     z-index: 100;
     background: rgba(189, 195, 199, 0.7);
     transition: all 3s ease;
-    
+
 }
-.animation:hover h3{
+
+.animation:hover h3 {
     color: #ffffff;
 }
+
 .animation_wrapper {
     position: relative;
     padding-left: 50px;
@@ -1004,9 +1007,10 @@ ul {
 
 .list_block_menu>li {
     position: relative;
-    
+
 }
-ul{
+
+ul {
     list-style: none;
 }
 
@@ -1041,6 +1045,224 @@ ul{
 .list_block_menu li a {
     padding: 40px
 }
-.cube > div {
+
+.cube>div {
     transition: transform 0.2s ease-in;
+}
+
+/* Graphics*/
+.wrapp {
+    width: 100%;
+    padding: 50px;
+}
+
+.graphic_main {
+    width: 200px;
+    height: 40px;
+    background: red;
+    margin: 0 auto;
+    position: relative;
+}
+
+.graphic_top {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: blue;
+    left: -20px;
+    top: 30px;
+    border-radius: 8px 0 8px 83%;
+}
+
+.graphic_bottom {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: blue;
+    left: -20px;
+    top: -30px;
+    border-radius: 83% 8px 0 8px;
+}
+
+.hexagon {
+    width: 100px;
+    height: 57.735px;
+    background: red;
+    position: relative;
+}
+
+.hexagon::before {
+    content: "";
+    position: absolute;
+    top: -28.8675px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 28.8675px solid red;
+}
+
+.hexagon::after {
+    content: "";
+    position: absolute;
+    bottom: -28.8675px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 28.8675px solid red;
+}
+
+.circle {
+    position: absolute;
+    left: 25%;
+    top: 22%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    outline: solid 2px black;
+    background-color: transparent;
+}
+
+/*Form*/
+textarea {
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+}
+
+::placeholder {
+    font-family: 'Courier New', Courier, monospace;
+    color: red;
+    opacity: 1;
+}
+
+select {
+    width: 150px;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 25px;
+    border-color: red;
+    color: blueviolet;
+   /* -moz-appearance: none;
+    /* Firefox */
+    -webkit-appearance: none;
+    /* Safari and Chrome */
+   /* appearance: none;*/
+}
+
+
+/*.wrap_el{
+    display: inline-block;
+    position: relative;
+}
+select::before {
+    content:'';
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background: url('../sprite/css_sprites_new.png') -0 -0;
+    right: 0;
+    top:0;
+    color:red;
+}*/
+
+.round {
+    background-image:
+        linear-gradient(45deg, transparent 50%, gray 50%),
+        linear-gradient(135deg, gray 50%, transparent 50%),
+        radial-gradient(#ddd 70%, transparent 72%);
+    background-position:
+        calc(100% - 20px) calc(1em + 2px),
+        calc(100% - 15px) calc(1em + 2px),
+        calc(100% - .5em) .5em;
+    background-size:
+        5px 5px,
+        5px 5px,
+        1.5em 1.5em;
+    background-repeat: no-repeat;
+   
+}
+/*input[type=number]*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    opacity: 0;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+    padding-right: 10px;
+}
+.wrap_input{
+display: inline-block;
+position: relative;
+}
+input[type=number]::before{
+    content: '*';
+    position: absolute;
+    width:5px;
+    height: 2px;
+    top:10px;
+    right: 10px;
+}
+input[type=number]::before:hover{
+    opacity: 1;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
   }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    border-radius: 34px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: blue;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: yellow;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 2px blue;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
