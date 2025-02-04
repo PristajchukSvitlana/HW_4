@@ -1207,10 +1207,9 @@ input[type=number]::before{
     height: 2px;
     top:10px;
     right: 10px;
-}
-input[type=number]::before:hover{
     opacity: 1;
 }
+
 .switch {
     position: relative;
     display: inline-block;
